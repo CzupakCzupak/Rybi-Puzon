@@ -1,0 +1,5 @@
+@mixin inter($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+  font-family: "Inter";
+}

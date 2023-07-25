@@ -1,0 +1,15 @@
+<svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/Social/Facebook">
+<g id="facebook" filter="url(#filter0_b_3_120)">
+<path d="M7.58513 21.15V12.015H10.5434L11.0266 7.95498H7.58513V5.97776C7.58513 4.93231 7.61361 3.89498 9.17188 3.89498H10.7502V0.992076C10.7502 0.948431 9.39449 0.849976 8.02296 0.849976C5.15857 0.849976 3.36503 2.53183 3.36503 5.62048V7.95498H0.199951V12.015H3.36503V21.15H7.58513Z" fill="black"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_3_120" x="-9.80005" y="-9.15002" width="30.8267" height="40.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3_120"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3_120" result="shape"/>
+</filter>
+</defs>
+</svg>
