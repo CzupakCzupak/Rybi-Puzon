@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   </head>
   <body>
-    <div class="container-fullhd">
+    <main class="container-fullhd">
       <section class="hero rel">
         <div class="splide splide-hero" role="group" aria-label="Hero slider">
           <div class="splide__track">
@@ -35,23 +36,321 @@
             </ul>
           </div>
         </div>
+        <div class="abs-logo">
+          <img src="img/logo.svg" alt="Logo mobile phone" />
+        </div>
         <div class="abs">
           <div class="hero__container">
-            <img src="img/logo.svg" alt="Logo rybi puzon" />
+            <img src="img/logo.svg" alt="Logo rybi puzon" class="hero__logo" />
+            <div class="section__name ta-c">
+              <p class="sub-heading">Serdecznie zapraszamy</p>
+              <h2 class="heading-primary fw-400">Zapoznaj się z&nbsp;naszą ofertą</h2>
+              <div class="section__name-btns">
+                <a href="#menu" class="btn btn-orange">Zobacz&nbsp;menu</a>
+                <a href="#menu" class="btn btn-orange">Zarezerwuj&nbsp;stolik</a>
+              </div>
+            </div>
+            <div class="social__icon">
+              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icon/Social/Facebook">
+                  <g id="facebook" filter="url(#filter0_b_3_120)">
+                    <path d="M7.58513 21.15V12.015H10.5434L11.0266 7.95498H7.58513V5.97776C7.58513 4.93231 7.61361 3.89498 9.17188 3.89498H10.7502V0.992076C10.7502 0.948431 9.39449 0.849976 8.02296 0.849976C5.15857 0.849976 3.36503 2.53183 3.36503 5.62048V7.95498H0.199951V12.015H3.36503V21.15H7.58513Z" fill="black" />
+                  </g>
+                </g>
+                <defs>
+                  <filter id="filter0_b_3_120" x="-9.80005" y="-9.15002" width="30.8267" height="40.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3_120" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_3_120" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
-      <div class="bitmap">
-        <div class="map__container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.141561393313!2d16.689785077623895!3d53.26908318050068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda6552e554d9d%3A0x17ad979303d745bb!2sRestauracja%20Rybi%20Puzon!5e0!3m2!1spl!2spl!4v1690288265313!5m2!1spl!2spl" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <section class="menu">
+        <div class="section__name ta-c">
+          <p class="sub-heading">Kontakt</p>
+          <h2 class="heading-primary fw-400">Skontaktuj się&nbsp;z&nbsp;nami</h2>
+          <p class="desc">Nasze menu ewoluuje wraz z porami roku oraz dostępnymi dodatkami. Poniżej znajdziecie Państwo aktualne menu, a także galerię potraw, dostępnych sezonowo, na które można trafić w naszej ofercie.</p>
         </div>
-      </div>
+        <div class="d-f ai-c jc-c f-w menu__btns">
+          <div class="btn btn-menu is-active btn-menu-js" data-menu="1">Lorem&nbsp;ipsum</div>
+          <div class="btn btn-menu btn-menu-js" data-menu="2">Lorem&nbsp;ipsum</div>
+          <div class="btn btn-menu btn-menu-js" data-menu="3">Lorem&nbsp;ipsum</div>
+          <div class="btn btn-menu btn-menu-js" data-menu="4">Lorem&nbsp;ipsum</div>
+        </div>
+        <div class="menu__lists">
+          <div class="menu__list is-active" data-list="1">
+            <p class="menu__heading">Lorem ipsum</p>
+            <ul class="dish__list">
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+            </ul>
+            <p class="menu__heading">Lorem ipsum</p>
+            <ul class="dish__list">
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__list" data-list="2">
+            <p class="menu__heading">Lorem ipsum</p>
+            <ul class="dish__list">
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__list" data-list="3">
+            <p class="menu__heading">Lorem ipsum</p>
+            <ul class="dish__list">
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__list" data-list="4">
+            <p class="menu__heading">Lorem ipsum</p>
+            <ul class="dish__list">
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+              <li class="dish__item">
+                <div>
+                  <p class="dish__name">Lorem ipsum dolor sit amet</p>
+                  <p class="dish__desc">Lorem ipsum dolor sit amet</p>
+                </div>
+                <p class="dish__price">22 PLN</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="splide splide-gallery" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="img/slide-1.png" alt="Slide 1" class="gallery__img" /></li>
+              <li class="splide__slide"><img src="img/slide-2.png" alt="Slide 2" class="gallery__img" /></li>
+              <li class="splide__slide"><img src="img/slide-3.png" alt="Slide 3" class="gallery__img" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="section__name ta-c">
+          <p class="sub-heading">Kontakt</p>
+          <h2 class="heading-primary fw-400">Skontaktuj się&nbsp;z&nbsp;nami</h2>
+        </div>
+        <div class="d-f ai-c jc-c f-w gap-20 contact-flex">
+          <div class="contact__box">
+            <p class="muli">
+              Restauracja RYBI PUZON <br />
+              <span>
+                64-930 Tarnowo 16<br />
+                GPS: 53.269080, 16.692360
+              </span>
+            </p>
+          </div>
+          <div class="contact__box">
+            <p class="contact__heading">Rezerwacja stolika</p>
+            <a href="tel:+48602385392" class="btn btn-orange">+48 602 385 392</a>
+          </div>
+          <div class="contact__box">
+            <p class="contact__heading">Rezerwacja On-line</p>
+            <a href="#" class="btn btn-orange">Rezerwuj</a>
+          </div>
+          <div class="contact__box">
+            <p class="contact__heading">Napisz do nas</p>
+            <a href="mailto:rybipuzon@xl.pl" class="btn btn-orange-outline">+48 602 385 392</a>
+          </div>
+        </div>
+      </section>
+      <section class="bitmap">
+        <div class="map__container">
+          <div id="map" class="map"></div>
+        </div>
+        <div class="opening ta-c">
+          <h2 class="heading-secondary mb-36 fw-400">Godziny otwarcia</h2>
+          <div class="opening__hours">
+            <p>wtorek - czwartek</p>
+            <p>13:00 - 20:00</p>
+          </div>
+          <div class="opening__hours">
+            <p>piątek - sobota</p>
+            <p>13:00 - 21:00</p>
+          </div>
+          <div class="opening__hours">
+            <p>niedziela</p>
+            <p>12:00 - 20:00</p>
+          </div>
+          <p class="opening__year mb-20">Działamy przez cały rok oprócz poniedziałków</p>
+          <p class="opening__year">Restauracja jest nieczynna w okresie: <br />25 grudnia - 6 stycznia oraz w czasie świąt&nbsp;wielkanocnych</p>
+        </div>
+      </section>
       <footer class="footer d-f ai-c jc-b">
         <p class="footer__text">© Copyright</p>
         <img src="img/sungroup-logo.png" alt="Wykonanie Sungroup" />
       </footer>
-    </div>
-
+    </main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
   </body>

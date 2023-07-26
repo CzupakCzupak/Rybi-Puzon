@@ -1,10 +1,22 @@
 .hero {
+  margin-bottom: 77px;
+
+  .abs-logo {
+    display: none;
+  }
   &__slide {
     max-width: 1920px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   &__img {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .splide__pagination {
@@ -27,16 +39,53 @@
   .abs {
     top: 0;
     left: 0;
+  }
+
+  &__container {
+    padding: 53px 0 0 57px;
     width: 100%;
     height: 100%;
   }
 
-  &__container {
+  .section__name {
+    margin: 156px 0 229px 48px;
+    max-width: 404px;
+    text-align: left;
+    .sub-heading {
+      margin-bottom: 28px;
+      text-transform: none;
+    }
+    .heading-primary:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &-btns {
+      max-width: 375px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
   }
+
+  .social__icon {
+    margin-left: 19px;
+  }
+}
+
+.social__icon {
+  display: grid;
+  place-content: center;
+  border-radius: 200px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  background-color: $white;
 }
 
 .bitmap {
   display: flex;
+  align-items: center;
+  gap: 226px;
+  margin-bottom: 16px;
 }
 
 .map {
@@ -46,5 +95,358 @@
     max-width: 1057px;
     width: 100%;
     height: 485px;
+  }
+}
+
+.opening {
+  max-width: 468px;
+  color: $white;
+
+  width: 100%;
+  &__hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+    @include inter(24px, normal);
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__year {
+    @include inter(14px, 30px);
+  }
+}
+
+.contact {
+  max-width: 1260px;
+  margin: 0 auto 110px;
+  .section__name {
+    margin-bottom: 66px;
+  }
+  &__box {
+    width: 300px;
+    height: 153px;
+    display: grid;
+    place-content: center;
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid $graydarker;
+
+    .muli {
+      @include inter(16px, 32px);
+      font-weight: 700;
+      span {
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+  }
+  &__heading {
+    margin-bottom: 22px;
+    @include inter(16px, normal);
+    font-weight: 400;
+  }
+}
+
+.section__name {
+  .sub-heading {
+    margin-bottom: 34px;
+  }
+  .heading-primary {
+    color: $white;
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+  .desc {
+    max-width: 887px;
+    @include inter(16px, 30px);
+    color: $graylighter;
+  }
+}
+
+.gallery {
+  margin-bottom: 74px;
+  &__img {
+    width: 100%;
+  }
+}
+
+.menu {
+  max-width: 940px;
+  margin: 0 auto 150px;
+  .section__name {
+    margin-bottom: 80px;
+  }
+
+  &__btns {
+    gap: 21px;
+    margin: 0 auto 40px;
+    max-width: 683px;
+  }
+
+  &__heading {
+    @include inter(20px, normal);
+    font-weight: 700;
+    margin-bottom: 38px;
+    color: $orange;
+  }
+
+  &__list {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+}
+
+.dish {
+  &__list {
+    padding: 0 30px;
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__item {
+    padding-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px;
+    flex-wrap: wrap;
+    &:not(:last-child) {
+      border-bottom: 1px solid $graydarker;
+
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name,
+  &__price {
+    @include inter(16px, 24px);
+    color: $white;
+  }
+
+  &__desc {
+    @include inter(14px, 18px);
+    color: $gray;
+  }
+}
+
+@media (max-width: 1800px) {
+  .menu {
+    padding: 0 10px;
+  }
+  .bitmap {
+    padding-right: 15px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .hero {
+    .section__name {
+      margin: 75px 0 100px 48px;
+    }
+  }
+}
+
+@media (max-width: 1660px) {
+  .bitmap {
+    padding: 0;
+    gap: 32px;
+    flex-direction: column-reverse;
+  }
+
+  .map__container {
+    max-width: unset;
+  }
+
+  .opening {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    &__container {
+      padding: 25px 0 0 25px;
+    }
+    .section__name {
+      margin: 37px 0 100px 24px;
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .contact {
+    padding: 0 15px;
+  }
+
+  .hero {
+    .splide__pagination {
+      right: 40px;
+      left: unset;
+      bottom: 30px;
+    }
+
+    &__logo {
+      max-width: 150px;
+      width: 100%;
+    }
+
+    .social__icon {
+      display: none;
+    }
+
+    &__container {
+      padding: 25px 0 0 25px;
+    }
+    .section__name {
+      .sub-heading {
+        margin-bottom: 15px;
+      }
+      .heading-primary {
+        @include inter(48px, 48px);
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    .abs-logo {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__container {
+      padding: 48px 15px 0;
+    }
+    .section__name {
+      text-align: center;
+      margin: 0 auto;
+      max-width: unset;
+
+      &-btns {
+        justify-content: center;
+        gap: 20px;
+        max-width: unset;
+        flex-wrap: wrap-reverse;
+      }
+      .sub-heading {
+        margin-bottom: 15px;
+      }
+      .heading-primary {
+        @include inter(48px, 48px);
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .abs {
+      position: relative;
+    }
+
+    &__slide {
+      height: 440px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .gallery {
+    width: 100%;
+    .splide__slide {
+      max-width: 100%;
+    }
+  }
+
+  .section__name {
+    .sub-heading {
+      margin-bottom: 16px;
+    }
+    .heading-primary {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+      @include inter(48px, 48px);
+    }
+  }
+
+  .menu {
+    .section__name {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .opening {
+    .heading-secondary {
+      margin-bottom: 18px;
+    }
+    &__hours {
+      @include inter(18px, 20px);
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+    &__year {
+      line-height: 24px;
+    }
+  }
+
+  .menu {
+    margin-bottom: 75px;
+  }
+
+  .dish {
+    &__item {
+      align-items: start;
+      flex-direction: column;
+    }
+    &__price {
+      align-self: flex-end;
+    }
+  }
+
+  .footer {
+    padding: 24px;
+  }
+
+  .contact {
+    .section__name {
+      margin-bottom: 48px;
+    }
+  }
+
+  .gallery {
+    margin-bottom: 32px;
+  }
+
+  .hero {
+    .abs-logo {
+      img {
+        max-width: 140px;
+        width: 100%;
+      }
+    }
   }
 }

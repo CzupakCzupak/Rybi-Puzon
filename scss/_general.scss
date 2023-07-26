@@ -54,7 +54,7 @@ ul li {
 }
 
 button {
-  outline: none;
+  outline: unset;
   font-size: inherit;
 }
 
@@ -71,18 +71,12 @@ img {
 }
 
 .heading {
-  &-primary,
-  &-secondary,
-  &-tertiary,
-  &-quarternary {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   &-primary {
+    @include inter(60px, 60px);
   }
 
   &-secondary {
+    @include inter(30px, normal);
   }
 
   &-tertiary {
@@ -90,6 +84,13 @@ img {
 
   &-quarternary {
   }
+}
+
+.sub-heading {
+  @include inter(20px, 30px);
+  font-weight: 400;
+  color: $orange;
+  text-transform: uppercase;
 }
 
 .show-more {

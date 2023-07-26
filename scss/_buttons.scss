@@ -1,0 +1,39 @@
+.btn {
+  @include inter(16px, normal);
+  padding: 14px 28px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn-orange {
+  background-color: $orange;
+  color: $black;
+}
+
+.btn-orange-outline {
+  border-radius: 5px;
+  border: 1px solid $orange;
+  background: $black;
+}
+
+.btn-menu {
+  background-color: $black;
+  color: $white;
+  width: 155px;
+  border-radius: 5px;
+  outline: rgba(255, 255, 255, 0.2) solid 1px;
+  transition: 0.3s all;
+  &:hover {
+    background-color: $orange;
+    outline: $orange solid 1px;
+    color: $black;
+    cursor: pointer;
+  }
+  &.is-active {
+    color: $white;
+    outline: $orange solid 1px;
+    &:hover {
+      color: $black;
+    }
+  }
+}
